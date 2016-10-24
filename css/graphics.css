@@ -193,8 +193,12 @@ width: 130px;
 }
 
 .hangingindent {
-  padding-left: 22px ;
-  text-indent: -22px ;
+  padding-left: 60px ;
+  text-indent: -60px ;
+}
+
+.indent {
+	margin-left: 60px ;
 }
 
 .intro {
