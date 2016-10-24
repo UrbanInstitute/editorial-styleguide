@@ -191,6 +191,12 @@ width: 130px;
 .chart{
  width: 100%;   
 }
+
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
+
 .intro {
     display: table;
     width: 100%;
