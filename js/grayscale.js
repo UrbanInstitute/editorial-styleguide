@@ -32,3 +32,19 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+//add subnav on hover over Style section
+var timer;
+$('.subnav-trigger').hover(function(){
+	
+	
+	$('.subnav').removeClass('hidden');},
+	 function(){
+	timer = setTimeout(function(){$('.subnav').addClass('hidden');}, 250);});
+	
+		
+	$(".subnav").hover(
+        function(){
+            clearTimeout(timer);
+        }, function(){
+            $('.subnav').removeClass('hidden');});
