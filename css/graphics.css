@@ -38,6 +38,17 @@ p {
     text-align: left;
 }
 
+.tablepara {
+	margin-bottom:0;
+	padding-bottom:0
+}
+
+td, tr {
+	margin-bottom: 0px;
+	padding-bottom:0px;
+	height: 15px;
+}
+
 ul{
  text-align: left;
     font-size: 1.25em;
@@ -72,6 +83,12 @@ ul{
         font-size: 18px;
         line-height: 1.6;
     }
+		
+		.tabletext {
+			margin: 0 0 35px;
+        font-size: 18px;
+        line-height: 1.6;
+		
 }
 
 .divider{
@@ -401,6 +418,10 @@ width: 130px;
     color: #000;
     background-color: #1696d2;
 }
+
+.table-align {
+		text-align:left;
+	}
 
 ul.banner-social-buttons {
     margin-top: 0;
