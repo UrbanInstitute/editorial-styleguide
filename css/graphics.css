@@ -38,6 +38,10 @@ p {
     text-align: left;
 }
 
+.introline {
+	margin: 0 0 7px;
+}
+
 .tablepara {
 	margin-bottom:0;
 	padding-bottom:0
@@ -50,6 +54,11 @@ td, tr {
 }
 
 ul{
+ text-align: left;
+    font-size: 1.25em;
+}
+
+ol{
  text-align: left;
     font-size: 1.25em;
 }
@@ -119,6 +128,9 @@ a:focus {
 .light {
     font-weight: 400;
 }
+
+
+	
 
 .navbar-custom {
     margin-bottom: 0;
@@ -325,7 +337,7 @@ width: 130px;
 }
 
 @-webkit-keyframes pulse {    
-    0 {
+    0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -342,7 +354,7 @@ width: 130px;
 }
 
 @-moz-keyframes pulse {    
-    0 {
+    0% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
