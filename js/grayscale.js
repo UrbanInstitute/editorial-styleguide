@@ -34,17 +34,38 @@ $('.navbar-collapse ul li a').click(function() {
 
 
 //add subnav on hover over Style section
-var timer;
+
+//old code for reference
+/* var timer;
 $('.subnav-trigger').hover(function(){
-	
-	
+		
 	$('.subnav').removeClass('hidden');},
+	 
 	 function(){
 	timer = setTimeout(function(){$('.subnav').addClass('hidden');}, 250);});
 	
 		
-	$(".subnav").hover(
+	$('.subnav').hover(
         function(){
             clearTimeout(timer);
         }, function(){
             $('.subnav').removeClass('hidden');});
+*/
+
+$('.subnav-trigger').mouseenter(function() {
+	$('.subnav').removeClass('hidden');}
+
+).mouseleave(function() {
+	$('.subnav').addClass('hidden');}
+	
+	);
+
+
+$('.subnav').mouseenter(function() {
+	$('.subnav').removeClass('hidden');}
+
+
+).mouseleave(function() {
+	$('.subnav').addClass('hidden');}
+	
+	);
