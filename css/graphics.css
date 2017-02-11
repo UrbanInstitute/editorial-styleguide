@@ -202,6 +202,8 @@ margin-left: 0;
     margin-top:-4px;
 width: 130px;
 }
+
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -234,6 +236,16 @@ width: 130px;
 .indent {
 	margin-left: 60px ;
 }
+
+.azindent {
+	margin-left: 60px;
+	font-weight:normal;
+	display:block;
+	}
+	
+	.notbold {
+		font-weight: normal;
+	}
 
 .intro {
     display: table;
