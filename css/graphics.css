@@ -32,7 +32,7 @@ h6 {
 }
 
 p {
-    margin: 0 0 15px;
+    margin: 0 0 -5px;
     font-size: 18px;
     line-height: 1.5;
     text-align: left;
@@ -53,14 +53,21 @@ td, tr {
 	height: 15px;
 }
 
-ul{
- text-align: left;
-    font-size: 1.25em;
+ul {
+margin: -25px 0 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
 }
 
-ol{
+
+h3 + ul {
+    margin-top: 0px;
+}
+
+ol {
  text-align: left;
-    font-size: 1.25em;
+ font-size: 18px;
 }
 
 .example-chart{
@@ -235,6 +242,9 @@ width: 130px;
 
 .indent {
 	margin-left: 60px ;
+	margin-right: 120px ;
+	margin-bottom: 5px ;
+	display: block
 }
 
 .azindent {
@@ -246,6 +256,8 @@ width: 130px;
 	.notbold {
 		font-weight: normal;
 	}
+	
+
 
 .intro {
     display: table;
@@ -406,7 +418,7 @@ width: 130px;
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
