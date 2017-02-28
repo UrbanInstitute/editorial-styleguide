@@ -29,13 +29,16 @@ h6 {
     font-weight: 700;
     letter-spacing: 1px;
     clear: both;
+		padding-top: 15px
 }
 
 p {
-    margin: 0 0 -5px;
+    margin: 0 0 -10px;
     font-size: 18px;
     line-height: 1.5;
     text-align: left;
+
+		
 }
 
 .introline {
@@ -54,11 +57,13 @@ td, tr {
 }
 
 ul {
-margin: -25px 0 15px;
+margin: -15px 0 15px;
     font-size: 18px;
     line-height: 1.5;
     text-align: left;
 }
+
+
 
 
 h3 + ul {
@@ -66,9 +71,11 @@ h3 + ul {
 }
 
 ol {
- text-align: left;
- font-size: 18px;
-}
+  text-align:left; 
+	font-size: 18px; 
+	font-family: Lato,'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	margin-left: 0px
+	}
 
 .example-chart{
  width:100%;
@@ -93,9 +100,34 @@ ol {
     margin-left:5px;
     margin-right:5px;
 }
+
+.hangingindent {
+  padding-left: 60px ;
+  text-indent: -60px ;
+}
+
+.indent {
+	margin-top: 5px;
+	margin-left: 60px ;
+	margin-right: 120px ;
+	margin-bottom: 15px ;
+	display: block
+}
+
+.azindent {
+	margin-left: 30px;
+	margin-top: 0px;
+	font-weight:normal;
+	display:block;
+	}
+	
+	.notbold {
+		font-weight: normal;
+	}
+
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 15px;
         font-size: 18px;
         line-height: 1.6;
     }
@@ -235,27 +267,7 @@ width: 130px;
  width: 100%;   
 }
 
-.hangingindent {
-  padding-left: 60px ;
-  text-indent: -60px ;
-}
 
-.indent {
-	margin-left: 60px ;
-	margin-right: 120px ;
-	margin-bottom: 5px ;
-	display: block
-}
-
-.azindent {
-	margin-left: 60px;
-	font-weight:normal;
-	display:block;
-	}
-	
-	.notbold {
-		font-weight: normal;
-	}
 	
 
 
@@ -489,6 +501,7 @@ height: 80px;
 margin-left: 0;
 width: 130px;
 }
+
 .logo-collapse{
  background-image: url(../img/urban-sm.png);
 background-repeat: no-repeat;
