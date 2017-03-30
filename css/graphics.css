@@ -128,6 +128,15 @@ ol {
 		font-weight: normal;
 	}
 
+.tooltip {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 10px;
+}
+
+
 @media(min-width:767px) {
     p {
         margin: 0 0 15px;
