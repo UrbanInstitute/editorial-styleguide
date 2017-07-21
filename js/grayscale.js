@@ -35,23 +35,6 @@ $('.navbar-collapse ul li a').click(function() {
 
 //add subnav on hover over Style section
 
-//old code for reference
-/* var timer;
-$('.subnav-trigger').hover(function(){
-		
-	$('.subnav').removeClass('hidden');},
-	 
-	 function(){
-	timer = setTimeout(function(){$('.subnav').addClass('hidden');}, 250);});
-	
-		
-	$('.subnav').hover(
-        function(){
-            clearTimeout(timer);
-        }, function(){
-            $('.subnav').removeClass('hidden');});
-*/
-
 $('.subnav-trigger').mouseenter(function() {
 	$('.subnav').removeClass('hidden');}
 
@@ -64,10 +47,39 @@ $('.subnav-trigger').mouseenter(function() {
 $('.subnav').mouseenter(function() {
 	$('.subnav').removeClass('hidden');}
 
-
 ).mouseleave(function() {
-	$('.subnav').addClass('hidden');}
-	
-	);
-	
-			
+$('.subnav').addClass('hidden');}	
+);
+
+var acc = document.getElementsByClassName("accordion");
+var icon = document.getElementsByClassName("fa-angle-right");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  };
+}
+
+
+
+/*
+for (i = 0; i < icon.length; i++) {
+$(".accordion").toggle(
+function() {
+icon[i].removeClass('fa-angle-right').addClass('fa-angle-down');
+
+},
+function() {
+
+icon[i].removeClass('fa-angle-down').addClass('fa-angle-right');
+});
+}
+*/

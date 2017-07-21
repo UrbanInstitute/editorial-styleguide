@@ -61,6 +61,7 @@ margin: -15px 0 15px;
     font-size: 18px;
     line-height: 1.5;
     text-align: left;
+    list-style-type: none;
 }
 
 .anchor {
@@ -127,6 +128,44 @@ ol {
 	.notbold {
 		font-weight: normal;
 	}
+	
+button.accordion {
+    background-color: #d2d2d2;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 18px 0px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.fa-angle-right {
+		-moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.fa-angle-right.down {
+-moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+
+}
 
 @media(min-width:767px) {
     p {
@@ -148,7 +187,6 @@ ol {
   border: 3px solid #1696d2;
   margin-top: 55px;
     margin-bottom:55px;
-  display: block;
   margin-left: auto;
   margin-right: auto;   
 }
@@ -237,6 +275,7 @@ margin-left: 0;
 margin-top: -30px;
 width: 200px;
 }
+
 .logo-collapse{
  background-image: url(../img/urban-sm.png);
 background-repeat: no-repeat;
@@ -347,19 +386,16 @@ width: 130px;
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 35px;
-    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+		padding: 7px 15px;
+    border: 2px solid black;
+    border-radius: 60px;
+    font-size: 25px;
     color: #fff;
     background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    margin-left: 45%
 }
 
 .btn-circle:hover,
@@ -387,6 +423,7 @@ width: 130px;
     -moz-animation-timing-function: linear;
 }
 
+		
 @-webkit-keyframes pulse {    
     0% {
         -webkit-transform: scale(1);
@@ -422,7 +459,7 @@ width: 130px;
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .download-section {
@@ -445,7 +482,7 @@ width: 130px;
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 150px;
+        padding-top: 75px;
     }
 
     .download-section {
@@ -573,3 +610,6 @@ body {
         font-size: 24px;
     }
 }
+
+
+
