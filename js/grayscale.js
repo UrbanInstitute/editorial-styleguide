@@ -55,6 +55,7 @@ var acc = document.getElementsByClassName("accordion");
 var icon = document.getElementsByClassName("fa-angle-right");
 var i;
 
+
 for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {
     this.classList.toggle("active");
@@ -68,18 +69,10 @@ for (i = 0; i < acc.length; i++) {
   };
 }
 
-
-
-/*
-for (i = 0; i < icon.length; i++) {
-$(".accordion").toggle(
-function() {
-icon[i].removeClass('fa-angle-right').addClass('fa-angle-down');
-
-},
-function() {
-
-icon[i].removeClass('fa-angle-down').addClass('fa-angle-right');
+$(".accordion").click(function(){
+$(this).find("i").toggleClass("Animate");
 });
-}
-*/
+
+
+
+
