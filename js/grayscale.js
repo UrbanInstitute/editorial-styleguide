@@ -4,8 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
+"use strict";
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".logo").addClass("logo-collapse");
@@ -18,6 +20,7 @@ $(window).scroll(function() {
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
+"use strict";
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -29,6 +32,7 @@ $(function() {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
+"use strict";
     $('.navbar-toggle:visible').click();
 });
 
@@ -36,28 +40,32 @@ $('.navbar-collapse ul li a').click(function() {
 //add subnav on hover over Style section
 
 $('.subnav-trigger').mouseenter(function() {
+"use strict";
 	$('.subnav').removeClass('hidden');}
 
 ).mouseleave(function() {
+"use strict";
 	$('.subnav').addClass('hidden');}
 	
 	);
 
 
 $('.subnav').mouseenter(function() {
+"use strict";
 	$('.subnav').removeClass('hidden');}
 
 ).mouseleave(function() {
+"use strict";
 $('.subnav').addClass('hidden');}	
 );
 
 var acc = document.getElementsByClassName("accordion");
-var icon = document.getElementsByClassName("fa-angle-right");
 var i;
 
 
 for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {
+	"use strict";
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
@@ -70,9 +78,8 @@ for (i = 0; i < acc.length; i++) {
 }
 
 $(".accordion").click(function(){
+"use strict";
 $(this).find("i").toggleClass("Animate");
 });
-
-
 
 
