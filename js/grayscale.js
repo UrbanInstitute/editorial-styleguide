@@ -59,6 +59,8 @@ $('.subnav').mouseenter(function() {
 $('.subnav').addClass('hidden');}	
 );
 
+//Collapse/expand accordion menu items on FAQ page
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
