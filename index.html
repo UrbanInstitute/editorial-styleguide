@@ -95,7 +95,7 @@
 										
                 </ul>
             </div>
-						<div class="subnav nav navbar hidden collapse navbar-collapse navbar-left navbar-main-collapse">
+						<div class="subnav nav navbar hidden collapse navbar-collapse navbar-left navbar-main-collapse subnav-trigger">
 						<ul style="margin:0 0 0 0; font-size: 16px" class="subnav subnav-trigger hidden nav navbar-nav navbar-right">
 								
 						<li class="subnav hidden navbar-right"><a class="page-scroll" href="#quotations">Quotations</a></li>
@@ -1086,14 +1086,15 @@ Within a table, % can stand for either <em>percent</em> or <em>percentage</em>.<
 <span class="indent">5&ndash;10%<br />
 $6&ndash;8 million</span></p>
 <p>Within text, it is not always necessary to repeat &ldquo;million&rdquo; for ranges, but consider the context. For something like, &ldquo;the program will cost $5 to $8 million,&rdquo; repeating the &ldquo;million&rdquo; is probably not necessary if the program  could not possibly cost just $5. However, if the text has been jumping in ranges, from hundreds to thousands to millions, then it is probably best to repeat the &ldquo;million.&rdquo;</p>
-<p>When defining data ranges (bins) for figures and tables, refer first to Jon Schwabish&rsquo;s <em>Urban Wire</em> post. How you structure your bins and display your data has profound implications for how your visualizations are interpreted, and any discussion of how to label those bins should be informed by the issues he raises.</p>
+
+<p>When defining data ranges (bins) for figures and tables, refer first to Jon Schwabish&rsquo;s <a href="https://www.urban.org/urban-wire/how-define-maps-bins-visualize-your-data"><em>Urban Wire</em> post</a>. How you structure your bins and display your data profoundly affects how your visualizations are interpreted, and any discussion of how to label those bins should be informed by the issues he raises.</p>
 <p>If you are working with discrete variables (such as SAT scores, numbers of people, and so forth), simply use en dashes to define each range. Because values can&rsquo;t fall between the ranges defined, the values don&rsquo;t need to overlap, and all possible values fall clearly into a bin.<br />
 <span class="indent">0&ndash;9<br />
 10&ndash;19<br />
 ...<br />
 90&ndash;100</span><br />
 
-If you are working with continuous variables (such as average SAT scores, average ages, or percentages), provide inequalities for your top and bottom bins unless they <em>must</em> be bounded. Other bins take en dashes, and each bin should begin with the value the previous bin ended with. The bins will appear to overlap, but the inequality allows readers to infer into which bin a value falls. Here, for example, 10.0% falls into bin 2, 20.0% falls into bin 3, and so on:<br />
+If you are working with continuous variables (such as average SAT scores, average ages, or percentages), provide inequalities for your top and bottom bins unless they <em>must</em> be bounded to avoid confusion. Other bins take en dashes, and each bin should begin with the value the previous bin ended with. The bins will appear to overlap, but the inequality allows readers to infer into which bin a value falls. Here, for example, 10.0% falls into bin 2, 20.0% falls into bin 3, and so on:<br />
 <span class="indent">&lt; 10%<br />
 10&ndash;20%<br />
 ...<br />

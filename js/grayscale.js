@@ -45,19 +45,18 @@ $('.subnav-trigger').mouseenter(function() {
 
 ).mouseleave(function() {
 "use strict";
-	$('.subnav').addClass('hidden');}
-	
-	);
+	$('.subnav').addClass('hidden');
+		});
 
 
 $('.subnav').mouseenter(function() {
 "use strict";
 	$('.subnav').removeClass('hidden');}
-
 ).mouseleave(function() {
 "use strict";
-$('.subnav').addClass('hidden');}	
-);
+
+$('.subnav').addClass('hidden');	
+});
 
 //Collapse/expand accordion menu items on FAQ page
 
